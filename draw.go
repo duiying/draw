@@ -1,7 +1,6 @@
 package draw
 
 import (
-	"fmt"
 	"math/rand"
 	"time"
 )
@@ -48,11 +47,7 @@ func WeightRand[TK, TV MyInt](weightedValues map[TK]TV) TK {
 	}
 
 	for key, value := range weightedValues {
-		originRandNum := randNum
 		randNum -= value
-		if randNum > 1000 {
-			fmt.Println(123, originRandNum, randNum, value)
-		}
 		if randNum <= 0 {
 			return key
 		}
