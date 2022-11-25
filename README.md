@@ -16,7 +16,7 @@ a := map[int]int{
     2: 3, // 2 的权重占 30%
     3: 6, // 3 的权重占 60%,
 }
-k := WeightRand(a)
+k := draw.WeightRand(a)
 ```
 
 
